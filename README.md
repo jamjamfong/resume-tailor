@@ -8,6 +8,8 @@ A project born from my frustration with having to tailor my resume for every job
 pip install requirements.txt 
 
 
-## Usage ## 
+## How it works ## 
 
-Paste yjd into 
+Paste the jd into a file called job_requirements.txt 
+Run python3 main.py --jd job_description.txt --output resume_output.pdf
+
