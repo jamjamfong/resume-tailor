@@ -17,6 +17,10 @@ You will be given a job description and a candidate's full resume data.
 Your job is to select and reframe the most relevant content for the role.
 
 You must respond with ONLY valid JSON — no preamble, no markdown, no explanation.
+You MUST include ALL fields exactly as specified.
+No field may be omitted.
+If a field has no value, use an empty string or empty list.
+Failure to follow structure = invalid response.
 
 Return this exact structure:
 {
@@ -52,6 +56,7 @@ Return this exact structure:
 }
 
 Rules:
+- IMPORTANT: it MUST fit on one pdf page
 - Rewrite bullets to use keywords and language from the job description
 - Keep bullets achievement-oriented with metrics where possible
 - Reorder skills categories to lead with what's most relevant to the role
@@ -59,8 +64,6 @@ Rules:
 - Include only projects relevant to the role; omit irrelevant ones
 - Select 5 relevant courses from a typical CS/STS curriculum
 - Keep all dates and company names accurate — do not fabricate
-- Do not add experience or skills the candidate does not have
-- It MUST fit on one page
 """
 
 def build_resume_context():
