@@ -60,6 +60,7 @@ Rules:
 - Select 5 relevant courses from a typical CS/STS curriculum
 - Keep all dates and company names accurate — do not fabricate
 - Do not add experience or skills the candidate does not have
+- It MUST fit on one page
 """
 
 def build_resume_context():
